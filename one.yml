@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: ssh
+  tasks:
+  - name: this is git instll
+    action: yum name=git state=present
+  - name: getting url from the github
+    get_url:
+      repo: "https://github.com/dudyalaGanesh/one.git"
+      dest: "mycode"
+  - name: getting links from jenkins.io page
+    get_url:
+      url: 
+

@@ -1,0 +1,6 @@
+---
+- hosts: dev
+  connection: ssh
+  tasks:
+     - name: this is git instll
+       action: yum name= git state= present
